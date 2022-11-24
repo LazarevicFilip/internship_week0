@@ -36,9 +36,11 @@ static void PassingRef(Dog dog)
 PassingRef(dog);
 Console.WriteLine(dog.Weight);
 
-var s = new CollectionExercise();
-//s.StackTest();
+var collection = new CollectionExercise();
+//collection.StackTest();
 
 
-var sd = new AlgorithamExercise();
-sd.SortArray(new int[] { 2, 3, 2, 5, 6, 4, 4, 9 }).ToList().ForEach(x => Console.Write(x));
+var alg = new AlgorithamExercise();
+//alg.SortArray(new int[] { 2, 3, 2, 5, 6, 4, 4, 9 }).ToList().ForEach(x => Console.Write(x));
+
+Console.WriteLine(alg.PairSocks(new int[] { 1, 2, 1, 3, 2, 1, 4,4,4,4 }));

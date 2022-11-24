@@ -34,10 +34,10 @@ namespace internship_week0
             }
             return arr.OrderBy(x => x).ToArray();
         }
-        public IEnumerable<int> PairSocks(int[] arr)
+        public int PairSocks(int[] arr)
         {
-            var s = arr.GroupBy(x => x).Select(x => new { nesto = x.Key, nesto2 = x.Count() });
-            return null;
+            return arr.GroupBy(x => x).Select(x => new { number = x.Key, count = x.Count() / 2 }).Sum(x => x.count);
+             
             
         }
     }
